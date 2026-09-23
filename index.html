@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized 1-to-1 AI Marketing — BVP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand-blue: #1a4a7a;
+      --brand-accent: #e8820c;
+    }
+    body { font-size: 1.05rem; }
+    .navbar { background-color: var(--brand-blue) !important; }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .nav-link:hover { color: var(--brand-accent) !important; }
+    .section-header {
+      border-left: 5px solid var(--brand-accent);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    section { padding: 3.5rem 0; }
+    section:nth-child(even) { background-color: #f8f9fa; }
+    .badge-email    { background-color: #0d6efd; }
+    .badge-text     { background-color: #198754; }
+    .badge-call     { background-color: #6f42c1; }
+    .badge-mail     { background-color: #e8820c; }
+    .badge-ai       { background-color: #1a4a7a; }
+    .message-card {
+      border-left: 4px solid #dee2e6;
+      margin-bottom: 1.5rem;
+    }
+    .message-card.from-prospect { border-left-color: #0d6efd; }
+    .message-card.from-ai       { border-left-color: var(--brand-accent); }
+    .msg-number {
+      font-size: 0.75rem;
+      color: #6c757d;
+      font-weight: 600;
+    }
+    .discussion-item {
+      counter-increment: discussion;
+    }
+    .discussion-item::before {
+      content: counter(discussion) ". ";
+      font-weight: 700;
+      color: var(--brand-accent);
+    }
+    ol.discussion-list { list-style: none; counter-reset: discussion; padding-left: 0; }
+    ol.discussion-list li { margin-bottom: 1.25rem; font-size: 1.05rem; }
+    .hero-tagline { font-size: 1.25rem; color: #444; }
+    .concept-step { border: 1px solid #dee2e6; border-radius: 0.5rem; padding: 1.25rem; height: 100%; }
+    .concept-step .step-num { font-size: 2rem; font-weight: 800; color: var(--brand-accent); }
+    footer { background-color: var(--brand-blue); color: #ccc; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-md sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#landing">Two Dog Playground</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-md-2">
+        <li class="nav-item"><a class="nav-link" href="#landing">Landing Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#persona">Persona</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conversation">Conversation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#discussion">Discussion</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- LANDING PAGE -->
+<section id="landing">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="text-uppercase fw-semibold" style="color:var(--brand-accent); letter-spacing:.08em;">Barely Viable Prototype</p>
+        <h1 class="fw-bold mb-3" style="color:var(--brand-blue);">Personalized 1-to-1<br>AI Marketing</h1>
+        <p class="hero-tagline mb-4">What happens when every prospect gets a conversation — not a campaign?</p>
+        <p>Marketing automation started with email autoresponders: canned messages fired based on open rates and clicks. Over time, branches, CRM triggers, and sales-rep handoffs made it more sophisticated. But the content was still written in advance, for a generic buyer.</p>
+        <p><strong>Personalized AI marketing takes two leaps forward:</strong></p>
+        <div class="row g-3 mt-1">
+          <div class="col-sm-6">
+            <div class="concept-step">
+              <div class="step-num">1</div>
+              <p class="mb-0">Natural language understanding replaces click-tracking. The system <em>reads</em> what a prospect asks and responds in kind.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="concept-step">
+              <div class="step-num">2</div>
+              <p class="mb-0">Content is generated on the fly — whitepapers, tutorials, videos, coupons — tailored to <em>this</em> person, <em>right now</em>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="assets/images/product.jpg" alt="Nina Ottosson Hide-N-Slide puzzle toy" class="img-fluid rounded shadow mb-4" style="max-height:280px; object-fit:cover;">
+        <div class="ratio ratio-16x9">
+          <!-- Replace VIDEO_ID with your YouTube video ID -->
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Arlo works the puzzle toy" allowfullscreen class="rounded shadow"></iframe>
+        </div>
+        <p class="text-muted mt-2 small">Arlo demonstrates the Nina Ottosson Hide-N-Slide puzzle toy</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h4 class="fw-semibold mb-3" style="color:var(--brand-blue);">The Product in This Demo</h4>
+        <p>The <strong>Nina Ottosson by Outward Hound Hide-N-Slide</strong> is a Level 2 interactive dog puzzle toy. Dogs use their nose and paws to slide compartments and lift bone-shaped covers, revealing hidden treats. It encourages focus and problem-solving — ideal mental stimulation for young, energetic dogs.</p>
+        <a href="https://www.chewy.com/nina-ottosson-by-outward-hound-hide-n/dp/186160" class="btn btn-sm btn-outline-secondary mt-1" target="_blank">View on Chewy &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONA -->
+<section id="persona">
+  <div class="container">
+    <h2 class="section-header fw-bold" style="color:var(--brand-blue);">Persona</h2>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <h4 class="fw-semibold mb-1">Jake &amp; Mia Chen</h4>
+        <p class="text-muted mb-3">Early 30s · Dual-income couple · Chicago suburbs · Share one email address</p>
+
+        <h6 class="fw-bold text-uppercase" style="color:var(--brand-accent); letter-spacing:.06em;">Who They Are</h6>
+        <p>Jake is a UX designer; Mia works in marketing analytics. They adopted Pickles — a four-month-old Labrador mix — six weeks ago from a shelter. Pickles is unambiguously their child. Their social feeds are already 40% dog photos.</p>
+
+        <h6 class="fw-bold text-uppercase mt-3" style="color:var(--brand-accent); letter-spacing:.06em;">What They Believe</h6>
+        <ul>
+          <li>Mental stimulation prevents the separation anxiety they've read about obsessively.</li>
+          <li>Their dog is exceptionally smart. (It's true. But they'd believe it regardless.)</li>
+          <li>Spending money on enrichment is not optional — it's responsible pet ownership.</li>
+        </ul>
+
+        <h6 class="fw-bold text-uppercase mt-3" style="color:var(--brand-accent); letter-spacing:.06em;">Their Core Worry</h6>
+        <p>They're both gone 7 a.m.–6 p.m. They worry about Pickles being bored, lonely, and destructive. They also worry — and will say so directly — that a Level 2 puzzle might be <em>too easy</em> for her after the first week.</p>
+
+        <h6 class="fw-bold text-uppercase mt-3" style="color:var(--brand-accent); letter-spacing:.06em;">How They Shop</h6>
+        <p>They research obsessively before buying. They read reviews, watch YouTube, join subreddits, and ask questions. They expect brands to meet them where they are — informed, specific, and a little impatient with generic answers.</p>
+      </div>
+      <div class="col-lg-5">
+        <div class="card border-0 shadow-sm p-4">
+          <h6 class="fw-bold mb-3">At a Glance</h6>
+          <table class="table table-sm table-borderless mb-0">
+            <tbody>
+              <tr><td class="text-muted">Names</td><td>Jake &amp; Mia Chen</td></tr>
+              <tr><td class="text-muted">Ages</td><td>Early 30s</td></tr>
+              <tr><td class="text-muted">Location</td><td>Chicago suburbs</td></tr>
+              <tr><td class="text-muted">Dog</td><td>Pickles, 4-month-old Lab mix</td></tr>
+              <tr><td class="text-muted">Concern</td><td>Separation anxiety; boredom</td></tr>
+              <tr><td class="text-muted">Objection</td><td>"Is this too easy for her?"</td></tr>
+              <tr><td class="text-muted">Budget</td><td>Not a gating factor</td></tr>
+              <tr><td class="text-muted">Email</td><td>jake.mia.pickles@gmail.com</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERSATION -->
+<section id="conversation">
+  <div class="container">
+    <h2 class="section-header fw-bold" style="color:var(--brand-blue);">Conversation</h2>
+    <p class="mb-4 text-muted">A simulated exchange between Jake &amp; Mia and the Personalized AI system. All content shown here would be generated on-the-fly in a real deployment.</p>
+
+    <!-- Message 1 -->
+    <div class="card message-card from-prospect p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 1</span>
+        <span><span class="badge badge-email text-white">Email</span> <span class="badge bg-secondary text-white">From: Jake &amp; Mia</span></span>
+      </div>
+      <p class="fw-semibold mb-1">Subject: Question about the Hide-N-Slide puzzle</p>
+      <p class="mb-0">Hi — we just saw the Hide-N-Slide on your site. We adopted a 4-month-old Lab mix six weeks ago and we're both gone during the day. Someone in our puppy class mentioned puzzle toys for mental stimulation. Is this one appropriate for a puppy, or is it designed for adult dogs?</p>
+    </div>
+
+    <!-- Message 2 -->
+    <div class="card message-card from-ai p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 2</span>
+        <span><span class="badge badge-email text-white">Email</span> <span class="badge badge-ai text-white">From: Personalized AI</span></span>
+      </div>
+      <p class="fw-semibold mb-1">Subject: Re: Question about the Hide-N-Slide puzzle</p>
+      <p>Jake and Mia — great question, and congratulations on Pickles! (We noticed you mentioned a 4-month-old Lab mix — we've generated a quick guide just for this age and breed profile.)</p>
+      <p>The Hide-N-Slide is rated Level 2 and works well for puppies as young as 12 weeks, especially for high-drive breeds like Labs. At four months, Pickles has the nose and the curiosity — but her attention span is still short, so we recommend starting with just 2 of the 4 compartments loaded with treats. That keeps her engaged without frustration.</p>
+      <p class="mb-0">I've attached a one-page <strong>Puppy Puzzle Starter Guide</strong> (PDF) customized for Lab mixes, 3–6 months. It covers treat sizing, session length, and how to know when she's ready to move up to Level 3. Would you like me to also send a short video of the toy in action?</p>
+    </div>
+
+    <!-- Message 3 -->
+    <div class="card message-card from-prospect p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 3</span>
+        <span><span class="badge badge-text text-white">Text</span> <span class="badge bg-secondary text-white">From: Mia</span></span>
+      </div>
+      <p class="mb-0">Yes please send the video! Also — our big worry is she'll figure it out in a day and get bored. Is there a harder version?</p>
+    </div>
+
+    <!-- Message 4 -->
+    <div class="card message-card from-ai p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 4</span>
+        <span><span class="badge badge-text text-white">Text</span> <span class="badge badge-ai text-white">From: Personalized AI</span></span>
+      </div>
+      <p class="mb-0">Great instinct — Labs are fast learners. The Hide-N-Slide has a trick: rotate the bone covers 90° before loading so the notches don't align. That doubles the challenge with no new toy needed. When she masters that, the Level 3 Twister is the natural next step. I'm texting you a 45-second clip of both difficulty modes right now. 🐾</p>
+    </div>
+
+    <!-- Message 5 -->
+    <div class="card message-card from-ai p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 5</span>
+        <span><span class="badge badge-mail text-white">Direct Mail</span> <span class="badge badge-ai text-white">From: Personalized AI</span></span>
+      </div>
+      <p class="fw-semibold mb-1">Postcard — delivered 3 days later</p>
+      <p class="mb-0 fst-italic">"Hi Jake &amp; Mia — hope Pickles is loving her new puzzle! Here's a 15% discount on your next Nina Ottosson toy when she's ready to level up. Code: PICKLES15. Valid 30 days."</p>
+    </div>
+
+    <!-- Message 6 -->
+    <div class="card message-card from-prospect p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 6</span>
+        <span><span class="badge badge-email text-white">Email</span> <span class="badge bg-secondary text-white">From: Jake</span></span>
+      </div>
+      <p class="fw-semibold mb-1">Subject: We ordered it — follow-up question</p>
+      <p class="mb-0">We got the toy and Pickles is obsessed. She solved the easy mode in about 20 minutes on day one. We rotated the covers like you suggested and she's still working on that version. Quick question: is it safe to leave her with it unsupervised when we're at work?</p>
+    </div>
+
+    <!-- Message 7 -->
+    <div class="card message-card from-ai p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 7</span>
+        <span><span class="badge badge-email text-white">Email</span> <span class="badge badge-ai text-white">From: Personalized AI</span></span>
+      </div>
+      <p class="fw-semibold mb-1">Subject: Re: We ordered it — follow-up question</p>
+      <p>Love hearing that — 20 minutes on day one for a 4-month-old is genuinely impressive. On supervision: the Hide-N-Slide is ABS plastic with no small parts that can break off, so it's considered safe for unsupervised use. That said, for puppies still in the chewing phase, we recommend a quick inspection after each session to check for any tooth marks on the compartment edges.</p>
+      <p class="mb-0">I've queued up a short <strong>Unsupervised Enrichment Checklist</strong> for working-dog owners — it covers puzzle toys, Kongs, and snuffle mats as a rotation so Pickles doesn't habituate to any one stimulus. I'll send it over email tomorrow morning so it's waiting in your inbox before your workday starts.</p>
+    </div>
+
+    <!-- Message 8 -->
+    <div class="card message-card from-ai p-3">
+      <div class="d-flex justify-content-between align-items-start mb-1">
+        <span class="msg-number">Message 8</span>
+        <span><span class="badge badge-call text-white">Phone Call</span> <span class="badge badge-ai text-white">From: Customer Success</span></span>
+      </div>
+      <p class="fw-semibold mb-1">AI-scheduled call — one week after purchase</p>
+      <p class="mb-0 fst-italic">"Hi, this is Sarah from the customer success team — the AI flagged that Pickles has been flying through the Level 2 puzzles. I wanted to personally walk you through the Nina Ottosson Level 3 lineup and answer any questions. Do you have 10 minutes this week?"</p>
+    </div>
+  </div>
+</section>
+
+<!-- DISCUSSION -->
+<section id="discussion">
+  <div class="container">
+    <h2 class="section-header fw-bold" style="color:var(--brand-blue);">Discussion</h2>
+    <p class="text-muted mb-4">Open discussion for roundtable participants. There are no right answers — the goal is to surface your reactions, questions, and instincts about where this is going.</p>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <ol class="discussion-list">
+          <li class="discussion-item"><strong>Where does this feel helpful vs. creepy?</strong> The AI knew Pickles was a Lab mix and generated breed-specific content without being asked. At what point does personalization cross a line — and who draws it?</li>
+          <li class="discussion-item"><strong>Who owns the relationship?</strong> In message 8, a human rep was looped in — but only because the AI scheduled it. Is that a handoff, a collaboration, or something else? What's the right role for humans in this loop?</li>
+          <li class="discussion-item"><strong>What happens to the brand voice?</strong> Every email, text, and postcard here was generated in real-time. If each prospect gets different content, what does "brand consistency" even mean? Is it still possible?</li>
+          <li class="discussion-item"><strong>What's the economics?</strong> Traditional marketing automation requires human copywriters to produce assets in advance. AI eliminates that labor cost — but adds AI infrastructure cost. How do you think about the tradeoff?</li>
+          <li class="discussion-item"><strong>How does trust get built?</strong> Jake and Mia shared that Pickles solved the puzzle in 20 minutes. That's a signal the AI acted on. What would make a customer <em>willing</em> to share that kind of information — and what would make them stop?</li>
+          <li class="discussion-item"><strong>Where would this break in your business?</strong> Think about your own customer conversations. Which parts could an AI handle well right now? Where would it embarrass you if it got it wrong?</li>
+          <li class="discussion-item"><strong>What's the first step?</strong> If a business wanted to move from a standard email autoresponder sequence toward this model, what's the smallest first experiment that would teach them something real?</li>
+        </ol>
+      </div>
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm p-4">
+          <h6 class="fw-bold mb-3">Facilitation Notes</h6>
+          <ul class="list-unstyled mb-0 small text-muted">
+            <li class="mb-2"><i class="bi bi-arrow-right-circle me-2"></i>No slides, no pitch — this is a conversation</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-circle me-2"></i>All feedback is useful, including skepticism</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-circle me-2"></i>Feel free to bring your own business context</li>
+            <li><i class="bi bi-arrow-right-circle me-2"></i>Questions don't need answers — they need better questions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-header fw-bold" style="color:var(--brand-blue);">Contact Me</h2>
+    <div class="row g-5 align-items-start">
+      <div class="col-md-6">
+        <!-- Replace with your actual contact information -->
+        <h5 class="fw-bold mb-3">Chris Sciora</h5>
+        <table class="table table-borderless table-sm">
+          <tbody>
+            <tr>
+              <td class="text-muted" style="width:120px"><i class="bi bi-envelope me-2"></i>Email</td>
+              <td><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></td>
+            </tr>
+            <tr>
+              <td class="text-muted"><i class="bi bi-telephone me-2"></i>Phone</td>
+              <td>CONTACT_PHONE</td>
+            </tr>
+            <tr>
+              <td class="text-muted"><i class="bi bi-globe me-2"></i>Web</td>
+              <td><a href="CONTACT_WEB" target="_blank">CONTACT_WEB</a></td>
+            </tr>
+            <tr>
+              <td class="text-muted"><i class="bi bi-linkedin me-2"></i>LinkedIn</td>
+              <td><a href="CONTACT_LINKEDIN" target="_blank">CONTACT_LINKEDIN</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 text-center">
+        <p class="text-muted mb-3">Scan to save my contact</p>
+        <!-- Replace with your actual QR code image -->
+        <img src="assets/images/vcard-qr.png" alt="vCard QR Code" class="img-fluid rounded shadow" style="max-width:220px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-3 text-center">
+  <div class="container">
+    <span>Personalized 1-to-1 AI Marketing &mdash; BVP Demo &mdash; twodogplayground.com</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+</body>
+</html>
